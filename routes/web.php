@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'HomeController@welcome');
+Route::get('/terms', 'HomeController@terms');
 Route::post('/register',  'HomeController@index');
 Route::get('/event/registered',  'EventController@index');
 Route::get('/event/import',  'EventController@import');

@@ -21,7 +21,6 @@ class EventController extends Controller
 
     public function store(Request $request)
     {
-
         $data = Excel::import(new EventRegisterImport(), request()->file('file'));
          return 'done';
     }

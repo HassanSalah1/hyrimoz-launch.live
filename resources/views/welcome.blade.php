@@ -39,9 +39,12 @@
                     <h4>About The Webinar</h4>
                     <div class="paragraph">
                         <ul class="my-list-style">
-                            <li class="mine"><span>Discuss data on biosimilar concepts , manufacturing , and  sandoz biosimilar development programs.</span></li>
-                            <li class="mine"><span>Understand the positioning of biosimilars in the treatment  algorithm of CD & UC Patients.</span></li>
-                            <li class="mine"><span>Learn about the variable and factors that guide HCP  in choosing a biologic treatment.</span></li>
+                            <li class="mine"><span>Discuss data on biosimilar concepts , manufacturing , and sandoz biosimilar
+                    development programs.</span></li>
+                            <li class="mine"><span>Understand the positioning of biosimilars in the treatment algorithm of CD & UC
+                    Patients.</span></li>
+                            <li class="mine"><span>Learn about the variable and factors that guide HCP in choosing a biologic
+                    treatment.</span></li>
                             <li class="mine"><span>Discuss the totality of evidence concept</span></li>
                             <li class="mine"><span>Present Hyrimoz data & experience</span></li>
                             <li class="mine"><span>Present Hyrimoz clinical data <b>(ADMYRA , ADACCESS)</b></span></li>
@@ -65,7 +68,8 @@
                                 Associate Director for assessment and evaluation unit. <br>
                                 Head of Gastroenterology and endoscopy unit. <br>
                                 Head of Academic Quality , Medicine Department.
-                                <br> <br> <br></p>
+                                <br> <br> <br>
+                            </p>
 
 
                         </div>
@@ -92,9 +96,9 @@
                 <!--col-lg-6-->
 
                 <!-- <div class="col-12">
-          <p class="text">*I Agree to receive an Email & SMS from Ego pharmaceuticals to attend the webinar .</p>
-        </div>
-         -->
+        <p class="text">*I Agree to receive an Email & SMS from Ego pharmaceuticals to attend the webinar .</p>
+      </div>
+       -->
             </div>
             <!--row-->
         </div>
@@ -211,14 +215,7 @@
                             <p id="demo3" style="color: red;"></p>
                         </div>
                         <!--col-lg-12-->
-                        <!-- <div class="col-lg-12">
-                    <label class="label-tit">Saudi SCFHS Card</label>
-                    <div class="input-group">
-                      <input type="text" id="saudiCoun" maxlength="15" placeholder="Enter SCFHS Card" class="form-control" required>
-                    </div>
 
-                    <p id="demo4" style="color: red;"></p>
-                  </div> -->
                         <!--col-lg-12-->
                         <div class="col-lg-12">
                             <label class="label-tit">mobile number</label>
@@ -228,6 +225,17 @@
                             </div>
                             <p id="demo5" style="color: red;"></p>
                         </div>
+
+                        <div class="col-lg-12">
+                            <label class="label-tit">Saudi SCFHS Card</label>
+                            <div class="input-group">
+                                <input type="text" id="saudiCoun" maxlength="15" placeholder="Enter SCFHS Card" class="form-control"
+                                       required>
+                            </div>
+
+                            <p id="demo4" style="color: red;"></p>
+                        </div>
+
                         <!--col-lg-12-->
 
                         <!-- <div class="col-lg-12">
@@ -240,16 +248,17 @@
                   </div> -->
                         <!--col-lg-12-->
                         <div class="col-lg-12">
-                            <label class="label-tit ">Specialty</label>
+                            <label class="label-tit">Specialty</label>
                             <div class="input-group">
                                 <!-- <input type="text" id="speciality" maxlength="15" placeholder="Enter Specialty " class="form-control" required> -->
                                 <select id="speciality" placeholder="Enter Specialty " class="form-control" required>
                                     <option selected disabled value="undefined">Select Specialty</option>
                                     <option value="Dermatologist">Dermatologist</option>
                                     <option value="Pediatrician">Pediatrician</option>
+                                    <option value="Rheumatology">Rheumatology</option>
+                                    <option value="Gastroenterology">Gastroenterology</option>
                                 </select>
                             </div>
-
                             <p id="demo7" style="color: red;"></p>
                         </div>
                         <!--col-lg-12-->
@@ -263,7 +272,47 @@
                             <p id="demo8" style="color: red;"></p>
                         </div>
                         <!--col-lg-12-->
+                        <!--col-lg-12-->
+                        <div class="col-lg-12">
+                            <label class="label-tit ">Which channel do you prefer?</label>
+                            <div class="input-group">
+                                <!-- <input type="text" id="speciality" maxlength="15" placeholder="Enter Specialty " class="form-control" required> -->
+                                <select id="channel"  class="form-control" required>
+                                    <option selected disabled value="undefined">Select channel</option>
+                                    <option value="Email">Email</option>
+                                    <option value="Whatsapp">Whatsapp</option>
+                                    <option value="Phone call">Phone call</option>
+                                    <option value="F2F">F2F</option>
+                                </select>
+                            </div>
+                            <p id="demo9" style="color: red;"></p>
+                        </div>
+                        <!--col-lg-12-->
+                        <!--col-lg-12-->
+                        <div class="col-lg-12">
+                            <label class=""><b>Ask the speaker</b></label>
+                            <div class="input-group">
+                                <input type="text" id="speaker" placeholder="Enter your question" class="form-control">
+                            </div>
 
+                            <p id="demo12" style="color: red;"></p>
+                        </div>
+                        <!--col-lg-12-->
+                        <!--col-lg-12-->
+                        <div class="col-lg-12">
+                            <label class="label-tit " style="padding-left: 20px;">
+                                <input type="checkbox" name="confirm" id="confirm" style="margin-left: -20px;" class="" required>
+                                I hereby confirm that the information provided herein is accurate, correct and complete.
+                            </label>
+                            <div class="input-group">
+
+                            </div>
+                            <p id="demo10" style="color: red;"></p>
+                        </div>
+                        <div class="col-lg-12">
+                            <label class="label-tit "><input type="checkbox" name="terms" id="terms" class="" required> I accept your <a href="index.php/terms" target="_blank">terms and conditions</a> </label>
+                            <p id="demo11" style="color: red;"></p>
+                        </div>
 
                         <div class="col-lg-12">
                             <button type="button" class="register" id="form_submit" [disabled]="!form-id.valid">register now
