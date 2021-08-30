@@ -1,4 +1,4 @@
-const Url = 'https://hyrimoz-launch.live/index.php/register';
+const Url = 'https://hyrimoz-launch.live/index.php/form/register';
 var request = new XMLHttpRequest();
 // var now = new Date();
 // var current_year = now.getFullYear();
@@ -139,6 +139,11 @@ document.getElementById("form_submit").addEventListener("click", function () {
             last_name: hospitalName + '*' + speciality + '*' + saudiCoun + '*'+ channel + '*' +speaker,
             email: email,
             phone: phone,
+            channel: channel,
+            speciality: speciality,
+            hospitalName: hospitalName,
+            saudiCoun: saudiCoun,
+            question: speaker,
         }
         request.open("POST", Url);
         request.setRequestHeader("Content-Type", "application/json");

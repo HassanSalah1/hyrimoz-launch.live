@@ -88,70 +88,129 @@
 </head>
 
 <body>
-<section class="content">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12 div-f">
-                <h3>Management of CMPA</h3>
-                <h5>Registered Doctors</h5>
+<div id="app">
+    <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="{{ url('/') }}">
+                {{ config('app.name', 'Laravel') }}
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Left Side Of Navbar -->
+                <ul class="navbar-nav mr-auto">
+
+                </ul>
+
+                <!-- Right Side Of Navbar -->
+                <ul class="navbar-nav ml-auto">
+                    <!-- Authentication Links -->
+                    @guest
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                        </li>
+                        @if (Route::has('register'))
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                            </li>
+                        @endif
+                    @else
+                        <li class="nav-item dropdown">
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                {{ Auth::user()->name }} <span class="caret"></span>
+                            </a>
+
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="{{ route('logout') }}"
+                                   onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                    {{ __('Logout') }}
+                                </a>
+
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    @csrf
+                                </form>
+                            </div>
+                        </li>
+                    @endguest
+                </ul>
             </div>
-            <!--col-lg-12-->
-            <div class="col-lg-12 mt-5">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="table-responsive">
-                            <table id="example" class="table table-striped table-bordered datatable" style="width:100%">
-                                <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Email</th>
-                                    <th>Phone Number</th>
-                                    <th>SCFHS</th>
-                                    <th>Specialty</th>
-                                    <th>Hospital</th>
-                                    <th>Attended Live</th>
-                                    <th>Date</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                @foreach($data as $item)
-                                    <tr>
-                                        <td>{{$item['name']}}</td>
-                                        <td>{{$item['email']}}</td>
-                                        <td>{{$item['phone']}}</td>
-                                        <td>{{$item['scfhs']}}</td>
-                                        <td>{{$item['specialty']}}</td>
-                                        <td>{{$item['hospital']}}</td>
-                                        <td>{{$item['attended_live']}}</td>
-                                        <td>{{$item['date']}}</td>
-                                    </tr>
-                                @endforeach
-                                </tbody>
-                                <tfoot>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Email</th>
-                                    <th>Phone Number</th>
-                                    <th>SCFHS</th>
-                                    <th>Specialty</th>
-                                    <th>Hospital</th>
-                                    <th>Attended Live</th>
-                                    <th>Date</th>
-                                </tr>
-                                </tfoot>
-                            </table>
+        </div>
+    </nav>
+
+    <main class="py-4">
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 div-f">
+{{--                        <h3>Management of CMPA</h3>--}}
+                        <h5>Registered Doctors</h5>
+                    </div>
+                    <!--col-lg-12-->
+                    <div class="col-lg-12 mt-5">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table id="example" class="table table-striped table-bordered datatable" style="width:100%">
+                                        <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Email</th>
+                                            <th>Phone Number</th>
+                                            <th>SCFHS</th>
+                                            <th>Specialty</th>
+                                            <th>Hospital</th>
+                                            <th>Channel</th>
+                                            <th>Question</th>
+                                            <th>Date</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        @foreach($data as $item)
+                                            <tr>
+                                                <td>{{$item['name']}}</td>
+                                                <td>{{$item['email']}}</td>
+                                                <td>{{$item['phone']}}</td>
+                                                <td>{{$item['scfhs']}}</td>
+                                                <td>{{$item['specialty']}}</td>
+                                                <td>{{$item['hospital']}}</td>
+                                                <td>{{$item['channel']}}</td>
+                                                <td>{{$item['question']}}</td>
+                                                <td>{{$item->created_at->format('Y-m-d')}}</td>
+                                            </tr>
+                                        @endforeach
+                                        </tbody>
+                                        <tfoot>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Email</th>
+                                            <th>Phone Number</th>
+                                            <th>SCFHS</th>
+                                            <th>Specialty</th>
+                                            <th>Hospital</th>
+                                            <th>Channel</th>
+                                            <th>Question</th>
+                                            <th>Date</th>
+                                        </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <!--col-lg-6-->
+
+
                 </div>
+                <!--row-->
             </div>
-            <!--col-lg-6-->
+            <!--container-->
+        </section>
+    </main>
+</div>
 
-
-        </div>
-        <!--row-->
-    </div>
-    <!--container-->
-</section>
 <!--content-->
 <div class="clear"></div>
 

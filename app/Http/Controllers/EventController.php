@@ -24,4 +24,5 @@ class EventController extends Controller
         $data = Excel::import(new EventRegisterImport(), request()->file('file'));
          return 'done';
     }
+
 }
