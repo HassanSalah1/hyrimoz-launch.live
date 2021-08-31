@@ -27,10 +27,10 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 div-f">
-                <img class="bann-small" src="images/small_logo.png">
+                <img class="bann-small" src="{{asset('images/small_logo.png')}}">
 
                 <h3>hyrimoz Lunch event</h3>
-                <img class="bann" src="images/main_logo.png">
+                <img class="bann" src="{{asset('images/main_logo.png')}}">
             </div>
             <!--col-lg-12-->
             <div class="col-lg-6">
