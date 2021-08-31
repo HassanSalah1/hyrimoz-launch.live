@@ -325,7 +325,7 @@
                         </div>
                         <div class="col-lg-12">
                             <label class="label-tit "><input type="checkbox" name="terms" id="terms" class="" required>
-                                I accept your <a href="index.php/terms" style="color:#0721ec;" target="_blank">terms and
+                                I accept your <a href="/index.php/terms" style="color:#0721ec;" target="_blank">terms and
                                     conditions</a> </label>
                             <p id="demo11" style="color: red;"></p>
                         </div>
