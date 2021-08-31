@@ -17,5 +17,6 @@ class Doctors extends Model
         'channel',
         'question',
         'attend',
+        'day',
         ];
 }

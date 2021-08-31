@@ -5,23 +5,22 @@
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!--IE compatibility meta-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <!--first mobile meta-->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <title>hyrimoz Lunch event</title>
+    <title>Hyrimoz Lunch event</title>
     <meta name="viewport" content="width=device-width, user-scalable=no">
 
-    <link rel="stylesheet" href="css/all.css" />
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="icon" type="image/png" href="https://app.webinarjam.com/pagebuilder/assets/img/favicon/favicon-192.png" />
-    <meta name="csrf-token" content="{{ csrf_token() }}" />
+    <link rel="stylesheet" href="{{asset('css/all.css')}}"/>
+    <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}"/>
+    <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}"/>
+    <link rel="icon" type="image/png" href="https://app.webinarjam.com/pagebuilder/assets/img/favicon/favicon-192.png"/>
+    <meta name="csrf-token" content="{{ csrf_token() }}"/>
 
 </head>
 
 <body>
-
 
 
 <section class="content">
@@ -39,15 +38,12 @@
                     <h4>About The Webinar</h4>
                     <div class="paragraph">
                         <ul class="my-list-style">
-                            <li class="mine"><span>Discuss data on biosimilar concepts , manufacturing , and sandoz biosimilar
-                    development programs.</span></li>
-                            <li class="mine"><span>Understand the positioning of biosimilars in the treatment algorithm of CD & UC
-                    Patients.</span></li>
-                            <li class="mine"><span>Learn about the variable and factors that guide HCP in choosing a biologic
-                    treatment.</span></li>
-                            <li class="mine"><span>Discuss the totality of evidence concept</span></li>
-                            <li class="mine"><span>Present Hyrimoz data & experience</span></li>
-                            <li class="mine"><span>Present Hyrimoz clinical data <b>(ADMYRA , ADACCESS)</b></span></li>
+                            <li class="mine mb-2 mt-4"><span>Discuss data on biosimilar concepts , manufacturing , and sandoz biosimilar development programs.</span></li>
+                            <li class="mine mb-2"><span>Understand the positioning of biosimilars in the treatment algorithm of CD & UC Patients.</span></li>
+                            <li class="mine mb-2"><span>Learn about the variable and factors that guide HCP in choosing a biologic treatment.</span></li>
+                            <li class="mine mb-2"><span>Discuss the totality of evidence concept</span></li>
+                            <li class="mine mb-2"><span>Present Hyrimoz data & experience</span></li>
+                            <li class="mine mb-2"><span>Present Hyrimoz clinical data <b>(ADMYRA , ADACCESS)</b></span></li>
 
                         </ul>
                     </div>
@@ -61,13 +57,12 @@
             <div class="col-lg-6">
                 <div class="line-div">
                     <div class="media ">
-                        <img class="image-user" src="images/drNahla.png">
+                        <img class="image-user" src="{{asset('day_2/images/1.png')}}">
                         <div class="media-body">
-                            <h4 style="color: #F15831;">Dr. Nahla Ali Azzam</h4>
-                            <p style="color:#0A4C86;"> Associate professor and consultant Gastroenterologist. <br>
-                                Associate Director for assessment and evaluation unit. <br>
-                                Head of Gastroenterology and endoscopy unit. <br>
-                                Head of Academic Quality , Medicine Department.
+                            <h4 style="color: #F15831;">Dr. Hanan Al Rayes MD , ABIM</h4>
+                            <p style="color:#0A4C86;"> Senior Consultant Rheumatologist,<br>
+                                President of Saudi society for Rheumatology <br>
+
                                 <br> <br> <br>
                             </p>
 
@@ -77,19 +72,31 @@
 
                     <div class="line-div">
                         <div class="media ">
-                            <img class="image-user" src="images/drSilvio.png">
+                            <img class="image-user" src="{{asset('day_2/images/2.png')}}">
                             <div class="media-body">
-                                <h4 style="color: #F15831;">Prof. Silvio Danese M.D. PH.D.</h4>
-                                <p style="color:#0A4C86;"> Director , Immunocenter , (IBD, Rheumatology ,
-                                    Dermatology)<br>
-                                    Istituto Clinico Humanitas , Rozzano , Milano
+                                <h4 style="color: #F15831;">Prof. Suzan Mansour Attar</h4>
+                                <p style="color:#0A4C86;"> MBBCH , FACR , FRCPC. FRCPC (RHEUM)<br>
+                                    Professor of Medicine King Abdulaziz University
                                 </p>
 
 
                             </div>
                         </div>
                     </div>
+                    <div class="line-div">
+                        <div class="media ">
+                            <img class="image-user" src="{{asset('day_2/images/3.png')}}">
+                            <div class="media-body">
+                                <h4 style="color: #F15831;">Prof. Josef S. Smolen</h4>
+                                <p style="color:#0A4C86;"> Professor of internal Medicine and chairman of the <br>
+                                    Division of Rheumatology and Department of medicine 3 <br>
+                                    at the Medical University of Vienna.
+                                </p>
 
+
+                            </div>
+                        </div>
+                    </div>
                     <!--line-div-->
 
                 </div>
@@ -113,7 +120,7 @@
             <div class="col-lg-8 col-12">
                 <div class="box-footer">
                     <ul>
-                        <li> Monday, 6<sup>th</sup>of September, 2021, at 07:00 pm.</li>
+                        <li> Thursday, 9<sup>th</sup>of September, 2021, at 07:00 pm.</li>
                     </ul>
                 </div>
                 <!--box-footer-->
@@ -190,7 +197,8 @@
                         <div class="col-lg-12">
                             <label class="label-tit">First name</label>
                             <div class="input-group">
-                                <input type="text" id="firstName" placeholder="Enter first name" class="form-control" required>
+                                <input type="text" id="firstName" placeholder="Enter first name" class="form-control"
+                                       required>
                             </div>
                             <!--input-group-->
                             <p id="demo1" style="color: red;"></p>
@@ -200,7 +208,8 @@
                         <div class="col-lg-12">
                             <label class="label-tit">Last name</label>
                             <div class="input-group">
-                                <input type="text" id="lastName" placeholder="Enter last name" class="form-control" required>
+                                <input type="text" id="lastName" placeholder="Enter last name" class="form-control"
+                                       required>
                             </div>
                             <!--input-group-->
                             <p id="demo2" style="color: red;"></p>
@@ -209,7 +218,8 @@
                         <div class="col-lg-12">
                             <label class="label-tit">Email</label>
                             <div class="input-group">
-                                <input type="email" id="email" placeholder="Enter email address" class="form-control" required>
+                                <input type="email" id="email" placeholder="Enter email address" class="form-control"
+                                       required>
                             </div>
                             <!--input-group-->
                             <p id="demo3" style="color: red;"></p>
@@ -220,7 +230,8 @@
                         <div class="col-lg-12">
                             <label class="label-tit">mobile number</label>
                             <div class="input-group">
-                                <input type="text" id="phone" placeholder="Enter mobile number (+971*********)" class="form-control"
+                                <input type="text" id="phone" placeholder="Enter mobile number (+971*********)"
+                                       class="form-control"
                                        required>
                             </div>
                             <p id="demo5" style="color: red;"></p>
@@ -229,7 +240,8 @@
                         <div class="col-lg-12">
                             <label class="label-tit">Saudi SCFHS Card</label>
                             <div class="input-group">
-                                <input type="text" id="saudiCoun" maxlength="15" placeholder="Enter SCFHS Card" class="form-control"
+                                <input type="text" id="saudiCoun" maxlength="15" placeholder="Enter SCFHS Card"
+                                       class="form-control"
                                        required>
                             </div>
 
@@ -266,7 +278,8 @@
                             <label class="label-tit">Hospital name</label>
                             <div class="input-group">
                                 <!-- <input type="text" id="city" placeholder="Enter city" maxlength="15" class="form-control" required> -->
-                                <input type="text" id="hospitalName" placeholder="Enter Hospital name" class="form-control" required>
+                                <input type="text" id="hospitalName" placeholder="Enter Hospital name"
+                                       class="form-control" required>
                             </div>
 
                             <p id="demo8" style="color: red;"></p>
@@ -277,7 +290,7 @@
                             <label class="label-tit ">Which channel do you prefer?</label>
                             <div class="input-group">
                                 <!-- <input type="text" id="speciality" maxlength="15" placeholder="Enter Specialty " class="form-control" required> -->
-                                <select id="channel"  class="form-control" required>
+                                <select id="channel" class="form-control" required>
                                     <option selected disabled value="undefined">Select channel</option>
                                     <option value="Email">Email</option>
                                     <option value="Whatsapp">Whatsapp</option>
@@ -301,7 +314,8 @@
                         <!--col-lg-12-->
                         <div class="col-lg-12">
                             <label class="label-tit " style="padding-left: 20px;">
-                                <input type="checkbox" name="confirm" id="confirm" style="margin-left: -20px;" class="" required>
+                                <input type="checkbox" name="confirm" id="confirm" style="margin-left: -20px;" class=""
+                                       required>
                                 I hereby confirm that the information provided herein is accurate, correct and complete.
                             </label>
                             <div class="input-group">
@@ -310,12 +324,15 @@
                             <p id="demo10" style="color: red;"></p>
                         </div>
                         <div class="col-lg-12">
-                            <label class="label-tit "><input type="checkbox" name="terms" id="terms" class="" required> I accept your <a href="index.php/terms" style="color:#0721ec;" target="_blank">terms and conditions</a> </label>
+                            <label class="label-tit "><input type="checkbox" name="terms" id="terms" class="" required>
+                                I accept your <a href="index.php/terms" style="color:#0721ec;" target="_blank">terms and
+                                    conditions</a> </label>
                             <p id="demo11" style="color: red;"></p>
                         </div>
 
                         <div class="col-lg-12">
-                            <button type="button" class="register" id="form_submit" [disabled]="!form-id.valid">register now
+                            <button type="button" class="register" id="form_submit" [disabled]="!form-id.valid">register
+                                now
                                 <span><i class="fas fa-chevron-right"></i></span></button>
                         </div>
                         <!--col-lg-12-->
@@ -341,10 +358,10 @@
 </div>
 
 
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/all.js"></script>
-<script src="js/script.js"></script>
+<script src="{{asset('/js/jquery.js')}}"></script>
+<script src="{{asset('/js/bootstrap.js')}}"></script>
+<script src="{{asset('/js/all.js')}}"></script>
+<script src="{{asset('day_2/js/script.js')}}"></script>
 
 
 </body>

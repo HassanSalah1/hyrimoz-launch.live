@@ -117,6 +117,18 @@
                             </li>
                         @endif
                     @else
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.php/home">All days</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.php/event/registered/1">Event day 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.php/event/registered/2">Event day 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.php/event/registered/3">Event day 3</a>
+                        </li>
                         <li class="nav-item dropdown">
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                 {{ Auth::user()->name }} <span class="caret"></span>
@@ -146,7 +158,7 @@
                 <div class="row">
                     <div class="col-lg-12 div-f">
 {{--                        <h3>Management of CMPA</h3>--}}
-                        <h5>Registered Doctors</h5>
+                        <h5>Registered Doctors {{ isset($day) ? "day " . $day : '' }}</h5>
                     </div>
                     <!--col-lg-12-->
                     <div class="col-lg-12 mt-5">

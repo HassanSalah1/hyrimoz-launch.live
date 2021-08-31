@@ -11,10 +11,19 @@
 |
 */
 
-Route::get('/', 'HomeController@welcome');
+Route::get('/', 'HomeController@day1');
+Route::get('/event-1', 'HomeController@day1');
+Route::get('/event-2', 'HomeController@day2');
+Route::get('/event-3', 'HomeController@day3');
+
 Route::get('/terms', 'HomeController@terms');
-Route::post('/form/register',  'HomeController@webinarJam');
-Route::get('/event/registered',  'EventController@index');
+
+Route::post('/form/register/1',  'HomeController@dayOneStore');
+Route::post('/form/register/2',  'HomeController@dayTwoStore');
+Route::post('/form/register/3',  'HomeController@dayThreeStore');
+
+Route::get('/event/registered/{day}',  'EventController@index');
+
 Route::get('/event/import',  'EventController@import');
 Route::post('/event/store',  'EventController@store')->name('import');
 
