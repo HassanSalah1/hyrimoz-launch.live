@@ -294,7 +294,6 @@
                             <div class="input-group">
                                 <input type="text" id="speaker" placeholder="Enter your question" class="form-control">
                             </div>
-
                             <p id="demo12" style="color: red;"></p>
                         </div>
                         <!--col-lg-12-->
@@ -310,7 +309,8 @@
                             <p id="demo10" style="color: red;"></p>
                         </div>
                         <div class="col-lg-12">
-                            <label class="label-tit "><input type="checkbox" name="terms" id="terms" class="" required> I accept your <a href="/index.php/terms" style="color:#0721ec;" target="_blank">terms and conditions</a> </label>
+                            <label class="label-tit "><input type="checkbox" name="terms" id="terms" class="" required> I accept your
+                                <a href="{{asset('pdf/(10th of Sep)Webinar Novartis Privacy Policy April 2020.pdf')}}" download style="color:#0721ec;" >terms and conditions</a> </label>
                             <p id="demo11" style="color: red;"></p>
                         </div>
 

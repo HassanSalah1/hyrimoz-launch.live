@@ -38,12 +38,12 @@
                     <h4>About The Webinar</h4>
                     <div class="paragraph">
                         <ul class="my-list-style">
-                            <li class="mine mb-2 mt-4"><span>Discuss data on biosimilar concepts , manufacturing , and sandoz biosimilar development programs.</span></li>
-                            <li class="mine mb-2"><span>Understand the positioning of biosimilars in the treatment algorithm of CD & UC Patients.</span></li>
-                            <li class="mine mb-2"><span>Learn about the variable and factors that guide HCP in choosing a biologic treatment.</span></li>
-                            <li class="mine mb-2"><span>Discuss the totality of evidence concept</span></li>
+                            <li class="mine mb-2 mt-4"><span>Discuss data on Biosimilar concepts, manufacturing, and Sandoz biosimilar development programs.</span></li>
+                            <li class="mine mb-2"><span>Understand the positioning of biosimilars in the treatment algorithm of RA patients.</span></li>
+                            <li class="mine mb-2"><span>Learn about the variables and factors that guide HCPs in choosing a biologic treatment.</span></li>
+                            <li class="mine mb-2"><span>Discuss the Totality of evidence concept</span></li>
                             <li class="mine mb-2"><span>Present Hyrimoz data & experience</span></li>
-                            <li class="mine mb-2"><span>Present Hyrimoz clinical data <b>(ADMYRA , ADACCESS)</b></span></li>
+                            <li class="mine mb-2"><span>Present Hyrimoz Clinical data <b>(ADMYRA , ADACCESS)</b></span></li>
 
                         </ul>
                     </div>
@@ -60,13 +60,13 @@
                         <img class="image-user" src="{{asset('day_2/images/1.png')}}">
                         <div class="media-body">
                             <h4 style="color: #F15831;">Dr. Hanan Al Rayes MD , ABIM</h4>
-                            <p style="color:#0A4C86;"> Senior Consultant Rheumatologist,<br>
-                                President of Saudi society for Rheumatology <br>
-
-                                <br> <br> <br>
+                            <p style="color:#0A4C86;">
+                                Senior Consultant Rheumatologist,<br>
+                                President of Saudi Society for Rheumatology <br>
+                                Deputy Director Medicine Department <br>
+                                Prince Sultan Militay Medical City <br>
+                                <br>
                             </p>
-
-
                         </div>
                     </div>
 
@@ -75,8 +75,11 @@
                             <img class="image-user" src="{{asset('day_2/images/2.png')}}">
                             <div class="media-body">
                                 <h4 style="color: #F15831;">Prof. Suzan Mansour Attar</h4>
-                                <p style="color:#0A4C86;"> MBBCH , FACR , FRCPC. FRCPC (RHEUM)<br>
-                                    Professor of Medicine King Abdulaziz University
+                                <p style="color:#0A4C86;">
+                                    MBBCH. FACR. FRCPC. FRCPC (Rheum) <br>
+                                    Professor of Medicine .King Abdulaziz University <br>
+                                    Consultant Rheumatology & Internal Medicine <br>
+                                    King Abdulaziz University Hospital
                                 </p>
 
 
@@ -91,7 +94,13 @@
                                 <p style="color:#0A4C86;"> Professor of internal Medicine and chairman of the <br>
                                     Division of Rheumatology and Department of medicine 3 <br>
                                     at the Medical University of Vienna.
+                                    <br>
+                                    <br>
+                                    He is also head of the 2nd Department of <br>
+                                    Medicine – Center of Rheumatic Diseases at <br>
+                                    Hietzing Hospital, Vienna
                                 </p>
+
 
 
                             </div>
@@ -325,7 +334,7 @@
                         </div>
                         <div class="col-lg-12">
                             <label class="label-tit "><input type="checkbox" name="terms" id="terms" class="" required>
-                                I accept your <a href="/index.php/terms" style="color:#0721ec;" target="_blank">terms and
+                                I accept your <a href="{{asset('pdf/(9th of Sep)Webinar Novartis Privacy Policy April 2020.pdf')}}" download style="color:#0721ec;" >terms and
                                     conditions</a> </label>
                             <p id="demo11" style="color: red;"></p>
                         </div>
