@@ -9,7 +9,7 @@
     <!--first mobile meta-->
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <title>Hyrimoz Lunch event</title>
+    <title>Hyrimoz Launch event</title>
     <meta name="viewport" content="width=device-width, user-scalable=no">
 
     <link rel="stylesheet" href="{{asset('css/all.css')}}"/>
@@ -29,7 +29,7 @@
             <div class="col-lg-12 div-f">
                 <img class="bann-small" src="{{asset('images/small_logo.png')}}">
 
-                <h3>hyrimoz Lunch event</h3>
+                <h3>hyrimoz Launch event</h3>
                 <img class="bann" src="{{asset('images/main_logo.png')}}">
             </div>
             <!--col-lg-12-->
