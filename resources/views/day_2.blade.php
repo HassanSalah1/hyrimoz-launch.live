@@ -178,7 +178,7 @@
             <!-- Modal Header -->
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" id="close-modal">&times;</button>
-                <p>hyrimoz Lunch event</p>
+                <p>Hyrimoz Launch event</p>
             </div>
 
             <!-- Modal body -->
@@ -239,7 +239,7 @@
                         <div class="col-lg-12">
                             <label class="label-tit">mobile number</label>
                             <div class="input-group">
-                                <input type="text" id="phone" placeholder="Enter mobile number (+971*********)"
+                                <input type="text" id="phone" placeholder="Enter mobile number (966*********)"
                                        class="form-control"
                                        required>
                             </div>
@@ -278,6 +278,8 @@
                                     <option value="Pediatrician">Pediatrician</option>
                                     <option value="Rheumatology">Rheumatology</option>
                                     <option value="Gastroenterology">Gastroenterology</option>
+                                    <option value="Clinical pharmacy">Clinical pharmacy</option>
+                                    <option value="SANDOZ employee">SANDOZ employee</option>
                                 </select>
                             </div>
                             <p id="demo7" style="color: red;"></p>
